@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="application/vnd.wap.xhtml+xml; charset=UTF-8" />
+		<meta name="author" content="Berserk" />
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+		<script src="js/mylib.js" type="text/javascript"></script>
+		<title>GREENLAND | Регистрация | Сделано Berserk</title>
+	</head>
+	<body>
+		<div class="logotip">
+			Регистрация
+		</div>
+		<div class="authreg">
+			<a href="index.html"><img src="img/home.png" alt="На главную"/></a>
+			<script type="text/javascript">
+			name = getCookie("name");
+			if ((name.length != 0)&&(name !== "null")) {
+			document.write('<a href="cabinet.html"><img src="img/cabinet.png" alt="Кабинет"/></a> ');
+			document.write('<a href="messages.html"><img src="img/messages.png" alt="Сообщения"/></a> ');
+			document.write('<a href="#" id="logout" ><img src="img/logout.png" alt="Выход"/></a> ');
+			}
+			else{
+			document.write('<a href="auth.html"><img src="img/login.png" alt="Авторизация"/></a> ');
+			document.write('<a href="reg.html"><img src="img/signup.png" alt="Регистрация"/></a> ');
+			}
+			</script>
+		</div>
+		<div class="content">
+			<form action="cabinet.html" method="GET">
+				<input required="" placeholder="Имя... *" type="text" name="name">
+				<input required="" placeholder="Желаемый логин... *" type="text" name="login">
+				<input required="" placeholder="E-mail... *" type="email" name="email"><br>
+				<input required="" placeholder="Дата рождения... *" type="text" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}" name="borndate">
+				<input required="" placeholder="Желаемый пароль... *" type="password" name="password">
+				<input required="" placeholder="Подтвердите пароль... *" type="password" name="password_retry"><br>
+				<button type="submit">Зарегистрироваться</button>
+			</form>
+		</div>
+		<div class="footmenu">
+			<a href="index.html">Новости</a>
+			<a href="auth.html">Сервисы</a>
+			<a href="reg.html">Контакты</a>
+			<a href="reg.html">Информация</a>
+		</div>
+		<div class="copy">
+			 <a href="http://berserk.tk"><img src="img/copy.png" alt="" /></a>   
+		</div>
+		<script type="text/javascript">
+			//deleteCookie
+			logout.onclick = function() {
+				deleteCookie('name');
+				deleteCookie('login');
+				deleteCookie('email');
+				deleteCookie('borndate');
+				deleteCookie('password');
+				deleteCookie('password_retry');
+				location.reload();
+			  };
+		</script>
+	</body>
+</html>
