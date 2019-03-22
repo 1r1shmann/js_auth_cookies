@@ -250,6 +250,18 @@ input::placeholder,textarea::placeholder{
     border : #fff solid 2px;
 }
 
+.hide{
+    display: none;
+}
+
+.centered {
+  text-align: center;
+}
+
+.fullwidth {
+  width: 95%
+}
+
 
 
 .row {
@@ -269,7 +281,6 @@ input::placeholder,textarea::placeholder{
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 0.75rem;
-  min-height: 1px;
 }
 
 .row .col[class*="push-"], .row .col[class*="pull-"] {
@@ -360,14 +371,37 @@ input::placeholder,textarea::placeholder{
   right: auto;
 }
 
-.centered {
-  text-align: center;
-}
 img.autosize-img,
 video.autosize-video {
   max-width: 100%;
   height: auto;
 }
-.hide{
-    display: none;
+
+.messages {
+  list-style: none;
+  text-align: right;
+  padding: 0 5px;
+}
+.messages li {
+  width: 100%;
+  margin: 15px 0;
+}
+.messages li .text-msg  {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 80%;
+  min-height: 40px;
+  margin: 5px auto;
+  padding: 10px;
+}
+.sent_msg {
+  float: right;
+  text-align: right;
+  background: #008080;
+}
+
+.receive_msg {
+  float: left;
+  text-align: left;
+  background: #191970;
 }
