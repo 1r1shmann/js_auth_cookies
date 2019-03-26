@@ -1,133 +1,111 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
-	<head>
-		<meta http-equiv="Content-Type" content="application/vnd.wap.xhtml+xml; charset=UTF-8" />
-		<meta name="author" content="Berserk" />
-		<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
-		<link rel="stylesheet" href="css/style.css" type="text/css" />
-		<script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
-		<script src="js/mylib.js" type="text/javascript"></script>
-		<title>GREENLAND | Сообщения | Сделано Berserk</title>
-	</head>
-	<body>
-		<div class="logotip">
-			Сообщения
-		</div>
-		<div class="authreg">
-			<a href="index.html"><img src="img/home.png" alt="На главную"/></a>
-			<script type="text/javascript">
-			name = getCookie("name");
-			if ((name.length != 0)&&(name !== "null")) {
-			document.write('<a href="cabinet.html"><img src="img/cabinet.png" alt="Кабинет"/></a> ');
-			document.write('<a href="messages.html"><img src="img/messages.png" alt="Сообщения"/></a> ');
-			document.write('<a href="#" id="logout" ><img src="img/logout.png" alt="Выход"/></a> ');
-			}
-			else{
-			document.write('<a href="auth.html"><img src="img/login.png" alt="Авторизация"/></a> ');
-			document.write('<a href="reg.html"><img src="img/signup.png" alt="Регистрация"/></a> ');
-			}
-			</script>
-		</div>
-		<div class="content">
-                    <ul class="messages">
-                    </ul>
-                    <div class="row centered">
-                            <input class="fullwidth" id="text_message" required="" placeholder="Введите сообщение... *" type="text">
-                                <div id="error_message" class="hide"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col s12 centered">
-                            <button id="send_message">
-                                    Отправить
-                            </button>
-                        </div>
-                    </div>
+    <head>
+        <meta http-equiv="Content-Type" content="application/vnd.wap.xhtml+xml; charset=UTF-8" />
+        <meta name="author" content="Berserk" />
+        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+        <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+        <script src="js/mylib.js" type="text/javascript"></script>
+        <title>GREENLAND | Сообщения | Сделано Berserk</title>
+    </head>
+    <body>
+        <div class="logotip"> Сообщения </div>
+        <div class="authreg">
+            <a href="index.html"><img src="img/home.png" alt="На главную"/></a>
+            <script type="text/javascript">
+            name = getCookie("name");
+            if ((name.length != 0)&&(name !== "null")) {
+                document.write('<a href="cabinet.html"><img src="img/cabinet.png" alt="Кабинет"/></a> ');
+                document.write('<a href="messages.html"><img src="img/messages.png" alt="Сообщения"/></a> ');
+                document.write('<a href="#" id="logout" ><img src="img/logout.png" alt="Выход"/></a> ');
+            }
+            else{
+                document.write('<a href="auth.html"><img src="img/login.png" alt="Авторизация"/></a> ');
+                document.write('<a href="reg.html"><img src="img/signup.png" alt="Регистрация"/></a> ');
+                location.href = 'index.html';
+            }
+            </script>
+        </div>
+        <div class="content">
+            <ul class="messages">
+            </ul>
+            <div class="row centered">
+                <input class="fullwidth" id="text_message" required="" placeholder="Введите сообщение... *" type="text">
+                <div id="error_message" class="hide"></div>
+            </div>
+            <div class="row">
+                <div class="col s12 centered">
+                    <button class="fullwidth" id="send_message"> Отправить </button>
                 </div>
-		<div class="footmenu">
-			<a href="news.html">Новости</a>
-			<a href="services.html">Сервисы</a>
-			<a href="contacts.html">Контакты</a>
-			<a href="information.html">Информация</a>
-		</div>
-		<div class="copy">
-			 <a href="http://berserk.tk"><img src="img/copy.png" alt="" /></a>   
-		</div>
-		<script type="text/javascript">
-                    $("#send_message").click(function(){
-                        $("#error_message").hide('slow');
-                        var message = $("#text_message").val();
-                        $("#text_message").val('');
-                        //$(".messages").append('<li><div class="text-msg receive_msg">'+message+'</div></li>');
+            </div>
+        </div>
+        <div class="footmenu">
+            <a href="news.html">Новости</a>
+            <a href="services.html">Сервисы</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="information.html">Информация</a>
+        </div>
+        <div class="copy">
+            <a href="http://berserk.tk"><img src="img/copy.png" alt="" /></a>   
+        </div>
+        <script type="text/javascript">
 
-                        if(message === ''){
-                            $("#error_message").append('<b>Ошибка! Сообщение не может быть пустым!</b>').show('slow');
+            $(document).ready(function() {
+              $('input').keydown(function(e) {
+                if(e.keyCode === 13) {
+                    $('#send_message').click();
+                }
+              });
+            });
 
-                        }else{
-                            
-                            $(".messages").append('<li><div class="text-msg sent_msg">'+message+'</div></li>');
-                            
+
+            $("#send_message").click(function(){
+                $("#error_message").hide('slow');
+                $("#error_message").empty();
+                var message = $("#text_message").val().trim();
+                var id = getCookie("id");
+                id = ((id.length != 0)&&(id !== "null")&&(id !== "undefined")) ? id : 0;
+                $("#text_message").val('');
+
+                if(message === ''){
+                    $("#error_message").append('<b>Ошибка! Сообщение не может быть пустым!</b>').show('slow');
+                }else{
+                    $(".messages").append('<li><div class="text-msg sent_msg">'+message+'</div></li>');
+                    while($(".messages li").length > 7){
+                        $('li:first').detach();
+                    }
+
+                    $.ajax({
+                        type:'POST',
+                        //async:false,
+                        url: 'https://cors-anywhere.herokuapp.com/http://aiproject.ru/api/',
+                        'data': { 
+                            query: '{"ask":"'+message+'","userid":'+id+',"key":"1"}'
+                        },
+                        'success': function(data){
+                            msg = JSON.parse(data);
+                            $(".messages").append('<li><div class="text-msg receive_msg">'+msg['aiml']+'</div></li>');
                             while($(".messages li").length > 7){
                                 $('li:first').detach();
                             }
-                            
-                            if((message.toUpperCase().indexOf('привет'.toUpperCase()) > -1 ) || (message.toUpperCase().indexOf('прив'.toUpperCase()) > -1) || (message.toUpperCase().indexOf('хай'.toUpperCase()) > -1)){
-                                $(".messages").append('<li><div class="text-msg receive_msg">Привет.</div></li>');
-                            }
-                            else if((message.toUpperCase().indexOf('как дела'.toUpperCase()) > -1) || (message.toUpperCase().indexOf('че как оно'.toUpperCase()) > -1)|| (message.toUpperCase().indexOf('как оно'.toUpperCase()) > -1)|| (message.toUpperCase().indexOf('как ты'.toUpperCase()) > -1)|| (message.toUpperCase().indexOf('Как ты'.toUpperCase()) > -1)){
-                                $(".messages").append('<li><div class="text-msg receive_msg">Нормально. Ты как?</div></li>');
-                            }
-                            else if((message.toUpperCase().indexOf('нормально'.toUpperCase()) > -1) || (message.toUpperCase().indexOf('норм'.toUpperCase()) > -1) || (message.toUpperCase().indexOf('отлично'.toUpperCase()) > -1) || (message.toUpperCase().indexOf('пойдет'.toUpperCase()) > -1)){
-                                $(".messages").append('<li><div class="text-msg receive_msg">Найс.</div></li>');
-                            }
-                            else if((message.toUpperCase().indexOf('плохо'.toUpperCase()) > -1) || (message.toUpperCase().indexOf('хреново'.toUpperCase()) > -1) || (message.toUpperCase().indexOf('так себе'.toUpperCase()) > -1)){
-                                $(".messages").append('<li><div class="text-msg receive_msg">Че так?</div></li>');
-                            }
-                            else{
-                                $(".messages").append('<li><div class="text-msg receive_msg">Я тебя не понимаю.</div></li>');
-                            }
                         }
-                        /*
-                        $.ajax({
-                            headers: {
-                                'Host':'xu.su',
-                                'Connection':'keep-alive',
-                                'Content-Length':'41',
-                                'Pragma':'no-cache',
-                                'Cache-Control':'no-cache',
-                                'Accept':'application/json',
-                                'Origin':'https://xu.su',
-                                'X-User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
-                                'Content-Type':'application/json',
-                                'Referer':'https://xu.su/',
-                                'Accept-Encoding':'gzip, deflate, br',
-                                'Accept-Language':'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7',
-                                'Cookie':'__atssc=google%3B1; __atuvc=3%7C12; __atuvs=5c94aacd09d40766002'
-                            },
-                            'type':'POST',
-                            'dataType': 'json',
-                            'url': 'https://xu.su/api/send',
-                            'data': { 
-                                ot: "main",
-                                text: message,
-                                uid: null
-                            },
-                            'success': function(data){
-                                Alert('GOOD');
-                            }
-                        });
-                         */
                     });
-                    //deleteCookie
-                    logout.onclick = function() {
-                            deleteCookie('name');
-                            deleteCookie('login');
-                            deleteCookie('email');
-                            deleteCookie('borndate');
-                            deleteCookie('password');
-                            deleteCookie('password_retry');
-                            location.reload();
-                      };
-		</script>
-	</body>
+                }
+                $("#text_message").focus();
+            });
+            //deleteCookie
+            logout.onclick = function() {
+                deleteCookie('name');
+                deleteCookie('login');
+                deleteCookie('email');
+                deleteCookie('borndate');
+                deleteCookie('password');
+                deleteCookie('password_retry');
+                deleteCookie('id');
+                location.reload();
+            };
+        </script>
+    </body>
 </html>

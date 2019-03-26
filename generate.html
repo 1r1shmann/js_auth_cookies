@@ -8,10 +8,11 @@
         <link rel="stylesheet" href="css/style.css" type="text/css" />
         <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
         <script src="js/mylib.js" type="text/javascript"></script>
-        <title>GREENLAND | Регистрация | Сделано Berserk</title>
+        <script src="js/words_gen.js" type="text/javascript"></script>
+        <title>GREENLAND | Сообщения | Сделано Berserk</title>
     </head>
     <body>
-        <div class="logotip"> Регистрация </div>
+        <div class="logotip"> Генераторы </div>
         <div class="authreg">
             <a href="index.html"><img src="img/home.png" alt="На главную"/></a>
             <script type="text/javascript">
@@ -28,54 +29,50 @@
             </script>
         </div>
         <div class="content">
-            <form action="cabinet.html" method="GET">
-                <div class="row">
-                    <div class="col s12">
-                        <input class="fullwidth" required="" placeholder="Имя... *" type="text" name="name">
-                    </div>
+            <div class="row card">
+                <div class="col s7">
+                    <input class="fullwidth" type="text" id="snils_out" placeholder="Тут будет СНИЛС"/>
                 </div>
-                <div class="row">
-                    <div class="col s12">
-                        <input class="fullwidth" required="" placeholder="Желаемый логин... *" type="text" name="login">
-                    </div>
+                <div class="col s5">
+                    <button class="fullwidth" id="snils_generate">СНИЛС</button>
                 </div>
-                <div class="row">
-                    <div class="col s12">
-                        <input class="fullwidth" required="" placeholder="E-mail... *" type="email" name="email"><br>
-                    </div>
+            </div>
+            <div class="row card">
+                <div class="col s7">
+                    <input class="fullwidth" type="text" id="oms_out" placeholder="Тут будет ОМС"/>
                 </div>
-                <div class="row">
-                    <div class="col s12">
-                        <input class="fullwidth" required="" placeholder="Дата рождения... *" type="text" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}" name="borndate">
-                    </div>
+                <div class="col s5">
+                    <button class="fullwidth" id="oms_generate">ОМС</button>
                 </div>
-                <div class="row">
-                    <div class="col s12">
-                        <input class="fullwidth" required="" placeholder="Желаемый пароль... *" type="password" name="password">
-                    </div>
+            </div>
+            <div class="row card">
+                <div class="col s7">
+                    <input class="fullwidth" type="text" id="words_out" placeholder="Случайное слововосочетание"/>
                 </div>
-                <div class="row">
-                    <div class="col s12">
-                        <input class="fullwidth" required="" placeholder="Подтвердите пароль... *" type="password" name="password_retry"><br>
-                    </div>
+                <div class="col s5">
+                    <button class="fullwidth" id="words_generate">Генерировать</button>
                 </div>
-                <div class="row">
-                    <div class="col s12">
-                        <button class="fullwidth" type="submit">Зарегистрироваться</button>
-                    </div>
-                </div>
-            </form>
+            </div>
         </div>
         <div class="footmenu">
-            <a href="index.html">Новости</a>
-            <a href="auth.html">Сервисы</a>
-            <a href="reg.html">Контакты</a>
-            <a href="reg.html">Информация</a>
+            <a href="news.html">Новости</a>
+            <a href="services.html">Сервисы</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="information.html">Информация</a>
         </div>
         <div class="copy">
             <a href="http://berserk.tk"><img src="img/copy.png" alt="" /></a>   
         </div>
         <script type="text/javascript">
+            $('#snils_generate').click(function(){
+                $("#snils_out").val(snils());
+            });
+            $('#oms_generate').click(function(){
+                $("#oms_out").val(oms());
+            });
+            $('#words_generate').click(function(){
+                $("#words_out").val(generate_words());
+            });
             //deleteCookie
             logout.onclick = function() {
                 deleteCookie('name');

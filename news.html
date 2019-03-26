@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
+    <head>
+        <meta http-equiv="Content-Type" content="application/vnd.wap.xhtml+xml; charset=UTF-8" />
+        <meta name="author" content="Berserk" />
+        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+        <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+        <script src="js/mylib.js" type="text/javascript"></script>
+        <title>GREENLAND | Сообщения | Сделано Berserk</title>
+    </head>
+    <body>
+        <div class="logotip"> Новости </div>
+        <div class="authreg">
+            <a href="index.html"><img src="img/home.png" alt="На главную"/></a>
+            <script type="text/javascript">
+                name = getCookie("name");
+                if ((name.length != 0)&&(name !== "null")) {
+                    document.write('<a href="cabinet.html"><img src="img/cabinet.png" alt="Кабинет"/></a> ');
+                    document.write('<a href="messages.html"><img src="img/messages.png" alt="Сообщения"/></a> ');
+                    document.write('<a href="#" id="logout" ><img src="img/logout.png" alt="Выход"/></a> ');
+                }
+                else{
+                    document.write('<a href="auth.html"><img src="img/login.png" alt="Авторизация"/></a> ');
+                    document.write('<a href="reg.html"><img src="img/signup.png" alt="Регистрация"/></a> ');
+                }
+            </script>
+        </div>
+        <div class="content">
+            <div class="card bordered">
+                <div class="row bordered-bottom card_head">
+                    <div class="col s1 centered">
+                        #2
+                    </div>
+                    <div class="col s11">
+                        Алиса, генераторы, чудеса.
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 justify">
+                        Прикрутил к чату бота, ее зовут Алиса, прошу любить и жаловать. Не путайте ее с Алисой из Яндекса. 
+                        Пообщаться с Алисой можно и в сервисах, только перед этим надо авторизоваться или зарегистрироваться.<br>
+                        Так же добавил в сервисы пару генераторов (СНИЛС, ОМС, случайное словосочетание).<br>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 righted">
+                        26.03.2019
+                    </div>
+                </div>
+            </div>
+            <div class="card bordered">
+                <div class="row bordered-bottom card_head">
+                    <div class="col s1 centered">
+                        #1
+                    </div>
+                    <div class="col s11">
+                        Новость номер один тест успешен.
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 justify">
+                        Тут был случайный текст для проверки вывода новости. Спасибо за внимание!
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 righted">
+                        25.03.2019
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footmenu">
+            <a href="news.html">Новости</a>
+            <a href="services.html">Сервисы</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="information.html">Информация</a>
+        </div>
+        <div class="copy">
+            <a href="http://berserk.tk"><img src="img/copy.png" alt="" /></a>   
+        </div>
+        <script type="text/javascript">
+            //deleteCookie
+            logout.onclick = function() {
+                deleteCookie('name');
+                deleteCookie('login');
+                deleteCookie('email');
+                deleteCookie('borndate');
+                deleteCookie('password');
+                deleteCookie('password_retry');
+                deleteCookie('id');
+                location.reload();
+            };
+        </script>
+    </body>
+</html>

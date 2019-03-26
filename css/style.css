@@ -1,244 +1,226 @@
 ﻿body {
-	font-size : 14px;
-	font-family : sans-serif;
-	color : #fff;
-	background-color : #171717;
-	background-image : url(../img/background.png);
-	background-repeat : repeat;
-	background-attachment : fixed;
-	margin : 2px auto;
-        max-width: 600px
+    font-size : 14px;
+    font-family : sans-serif;
+    color : #fff;
+    background-color : #171717;
+    background-image : url(../img/background.png);
+    background-repeat : repeat;
+    background-attachment : fixed;
+    margin : 2px auto;
+    max-width: 600px
 }
 
 a {
-	border-top : 1px;
-	color : #ffffff;
-	text-decoration : none;
+    border-top : 1px;
+    color : #ffffff;
+    text-decoration : none;
 }
-
 
 a:hover {
-	color : #ffffff;
-}
-.logotip {
-	padding: 10px;
-	text-align : center;
-	font-size : 18px;
-	border-radius : 15px 15px 0 0;
-	border : #ffffff solid 2px;
-	display: block;
+    color : #ffffff;
 }
 
+.logotip {
+    padding: 10px;
+    text-align : center;
+    font-size : 18px;
+    border-radius : 15px 15px 0 0;
+    border : #ffffff solid 2px;
+    display: block;
+}
 
 .authreg {
-	background : #006600 ;
-	padding : 4px;
-	text-align : center;
-	border-left : #fff solid 2px;
-	border-right : #fff solid 2px;
-	border-bottom : #fff solid 2px;
+    background : #006600 ;
+    padding : 4px;
+    text-align : center;
+    border-left : #fff solid 2px;
+    border-right : #fff solid 2px;
+    border-bottom : #fff solid 2px;
 	
 }
 
-
 .authreg a{
-	color : #fff;
-	background-color : #004400;
-	padding:5px;
-	margin:2px 0px 2px 0px;
-	border-radius : 4px;
-	border : #fff solid 2px;
-	display : inline-table;
+    color : #fff;
+    background-color : #004400;
+    padding:5px;
+    margin:2px 0px 2px 0px;
+    border-radius : 4px;
+    border : #fff solid 2px;
+    display : inline-table;
 }
-
 
 .authreg a:hover, .aut a:hover {
-	background-color : #002200 ;
-	background : #002200 url(../img/background.png);
-	color : #fff;
+    background-color : #002200 ;
+    background : #002200 url(../img/background.png);
+    color : #fff;
 }
-
 
 .footmenu {
-	background : #006600 ;
-	padding : 4px;
-	text-align : center;
-	border : #fff solid 2px;
+    background : #006600 ;
+    padding : 4px;
+    text-align : center;
+    border : #fff solid 2px;
 }
 
-
 .footmenu a{
-	color : #fff;
-	background-color : #004400;
-	padding:5px;
-	margin:2px 0px 2px 0px;
-	border-radius : 4px;
-	border : #fff solid 2px;
-	display : inline-table;
-	vertical-align: center;
-	min-width : 30px;
+    color : #fff;
+    background-color : #004400;
+    padding:5px;
+    margin:2px 0px 2px 0px;
+    border-radius : 4px;
+    border : #fff solid 2px;
+    display : inline-table;
+    vertical-align: center;
+    min-width : 30px;
 }
 
 .footmenu img{
-	height : 16px
+    height : 16px
 }
-
 
 .footmenu a:hover, .aut a:hover {
-	background-color : #002200 ;
-	background : #002200 url(../img/background.png);
-	color : #fff;
+    background-color : #002200 ;
+    background : #002200 url(../img/background.png);
+    color : #fff;
 }
-
-
 
 .content {
-	color : #fff;
+    color : #fff;
 /* 	background : url(../img/block.png) right no-repeat;*/
- 	/* background-color : #fff; */
-	display : block;
-	padding : 8px;
-	min-height: 60px;
-	border-left: #fff solid 2px;
-	border-right: #fff solid 2px;
+    /* background-color : #fff; */
+    display : block;
+    padding : 8px;
+    min-height: 60px;
+    border-left: #fff solid 2px;
+    border-right: #fff solid 2px;
 }
-
 
 .content a {
-	color : #fff;
-	background-color : #004400;
-	padding:5px;
-	margin:5px;
-	border-radius : 4px;
-	border : #fff solid 2px;
-	display : inline-table;
+    color : #fff;
+    background-color : #004400;
+    padding:5px;
+    margin:5px;
+    border-radius : 4px;
+    border : #fff solid 2px;
+    display : inline-table;
 }
-
 
 .content a:hover {
-	color : #fff;
-	background-color : #006600;
+    color : #fff;
+    background-color : #006600;
 }
-
 
 .main{
-	color : #fff;
-	display : block;
-	padding : 8px;
-	border-top : 1px solid #000;
-	border-left : 2px solid #fff;
-	border-right : 2px solid #fff;
+    color : #fff;
+    display : block;
+    padding : 8px;
+    border-top : 1px solid #000;
+    border-left : 2px solid #fff;
+    border-right : 2px solid #fff;
 }
-
 
 .main:hover {
-	color : #fff;
-	background-color : #006600;
+    color : #fff;
+    background-color : #006600;
 }
-
-
 
 .main img {
-	padding-right : 10px;
+    padding-right : 10px;
 }
-
 
 .count {
-	float : right;
-	padding : 4px 10px 4px 10px;
-	border : #fff solid 1px;
-	border-radius : 15px;
-	font-size : 10px;
-	font-weight : normal;
-	color : #fff;
-	min-width: 20px;
-	text-align: center;
+    float : right;
+    padding : 4px 10px 4px 10px;
+    border : #fff solid 1px;
+    border-radius : 15px;
+    font-size : 10px;
+    font-weight : normal;
+    color : #fff;
+    min-width: 20px;
+    text-align: center;
 }
-
 
 .recblock {
-	background : #006600 ;
-	padding : 4px;
-	text-align : center;
-	border: #fff solid 2px;
-	min-height: 30px;
+    background : #006600 ;
+    padding : 4px;
+    text-align : center;
+    border: #fff solid 2px;
+    min-height: 30px;
 }
-
 
 .copy {
-	padding-top: 20px;
-	height : 45px;
-	text-align : center;
-	border-radius : 0 0 15px 15px;
-	border-left : #ffffff solid 2px;
-	border-right : #ffffff solid 2px;
-	border-bottom : #ffffff solid 2px;
+    padding-top: 20px;
+    height : 45px;
+    text-align : center;
+    border-radius : 0 0 15px 15px;
+    border-left : #ffffff solid 2px;
+    border-right : #ffffff solid 2px;
+    border-bottom : #ffffff solid 2px;
 }
 
-
 .copy a:hover {
-	
+    
 }
 
 form {
-text-align: center;
+    text-align: center;
 }
 
 input{
-	color : #fff;
-	background-color : #090;
-	padding:5px;
-	margin:2px 0px 2px 0px;
-	border-radius : 20px;
-	border : #fff solid 2px;
-	display : inline-table;
-	min-width : 300px;
-	text-align: center;
+    color : #fff;
+    background-color : #090;
+    padding:5px;
+    margin:2px 0px 2px 0px;
+    border-radius : 20px;
+    border : #fff solid 2px;
+    display : inline-table;
+/*	min-width : 300px;*/
+    text-align: center;
 }
+
 select{
-	color : #fff;
-	background-color : #090;
-	padding:5px;
-	margin:2px 0px 2px 0px;
-	border-radius : 20px;
-	border : #fff solid 2px;
-	display : inline-table;
-	min-width : 315px;
-	text-align: center;
-	text-align-last: center
+    color : #fff;
+    background-color : #090;
+    padding:5px;
+    margin:2px 0px 2px 0px;
+    border-radius : 20px;
+    border : #fff solid 2px;
+    display : inline-table;
+/*	min-width : 315px;*/
+    text-align: center;
+    text-align-last: center
 }
 
 textarea{
-	color : #fff;
-	background-color : #090;
-	padding:5px;
-	margin:2px 0px 2px 0px;
-	border-radius : 20px;
-	border : #fff solid 2px;
-	min-width : 315px;
-}
-button{
-	color : #fff;
-	background-color : #004400;
-	padding:5px;
-	margin:2px 0px 2px 0px;
-	border-radius : 4px;
-	border : #fff solid 2px;
-	display : inline-table;
-	min-width : 310px;
+    color : #fff;
+    background-color : #090;
+    padding:5px;
+    margin:2px 0px 2px 0px;
+    border-radius : 20px;
+    border : #fff solid 2px;
+/*	min-width : 315px;*/
 }
 
+button{
+    color : #fff;
+    background-color : #004400;
+    padding:5px;
+    margin:2px 0px 2px 0px;
+    border-radius : 4px;
+    border : #fff solid 2px;
+    display : inline-table;
+    /*min-width : 310px;*/
+}
 
 input:hover, button:hover, textarea:hover{
-	background-color : #002200 ;
-	background : #002200 url(../img/background.png);
-	color : #fff;
+    background-color : #002200 ;
+    background : #002200 url(../img/background.png);
+    color : #fff;
 }
 
-
 input::placeholder,textarea::placeholder{
-	text-align: center;
-	color : #ddd;
+    text-align: center;
+    color : #ddd;
 }
 
 .cabinet_ava img{
@@ -250,158 +232,209 @@ input::placeholder,textarea::placeholder{
     border : #fff solid 2px;
 }
 
+.bordered-top{
+    border-radius : 4px;
+    border-top : #fff solid 2px;
+}
+
+.bordered-right{
+    border-radius : 4px;
+    border-right : #fff solid 2px;
+}
+
+.bordered-bottom{
+    border-radius : 4px;
+    border-bottom : #fff solid 2px;
+}
+
+.bordered-left{
+    border-radius : 4px;
+    border-left : #fff solid 2px;
+}
+
 .hide{
     display: none;
 }
 
 .centered {
-  text-align: center;
+    text-align: center;
+}
+
+.justify{
+    text-align: justify;
+}
+
+.lefted{
+    text-align: left;
+}
+
+.righted{
+    text-align: right;
 }
 
 .fullwidth {
-  width: 95%
+    width: 95%
 }
 
+.card {
+    display: block;
+    margin-bottom: 10px;
+    background-color: #033;
+}
 
+.card_head{
+    background-color: #008080;
+}
 
 .row {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
 }
 
 .row:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .row .col {
-  float: left;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0 0.75rem;
+    float: left;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0 0.75rem;
 }
 
 .row .col[class*="push-"], .row .col[class*="pull-"] {
-  position: relative;
+    position: relative;
 }
 
 .row .col.s1 {
-  width: 8.3333333333%;
-  margin-left: auto;
-  left: auto;
-  right: auto;
+    width: 8.3333333333%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
 }
 
 .row .col.s2 {
-  width: 16.6666666667%;
-  margin-left: auto;
-  left: auto;
-  right: auto;
+    width: 16.6666666667%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
 }
 
 .row .col.s3 {
-  width: 25%;
-  margin-left: auto;
-  left: auto;
-  right: auto;
+    width: 25%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
 }
 
 .row .col.s4 {
-  width: 33.3333333333%;
-  margin-left: auto;
-  left: auto;
-  right: auto;
+    width: 33.3333333333%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
 }
 
 .row .col.s5 {
-  width: 41.6666666667%;
-  margin-left: auto;
-  left: auto;
-  right: auto;
+    width: 41.6666666667%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
 }
 
 .row .col.s6 {
-  width: 50%;
-  margin-left: auto;
-  left: auto;
-  right: auto;
+    width: 50%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
 }
 
 .row .col.s7 {
-  width: 58.3333333333%;
-  margin-left: auto;
-  left: auto;
-  right: auto;
+    width: 58.3333333333%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
 }
 
 .row .col.s8 {
-  width: 66.6666666667%;
-  margin-left: auto;
-  left: auto;
-  right: auto;
+    width: 66.6666666667%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
 }
 
 .row .col.s9 {
-  width: 75%;
-  margin-left: auto;
-  left: auto;
-  right: auto;
+    width: 75%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
 }
 
 .row .col.s10 {
-  width: 83.3333333333%;
-  margin-left: auto;
-  left: auto;
-  right: auto;
+    width: 83.3333333333%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
 }
 
 .row .col.s11 {
-  width: 91.6666666667%;
-  margin-left: auto;
-  left: auto;
-  right: auto;
+    width: 91.6666666667%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
 }
 
 .row .col.s12 {
-  width: 100%;
-  margin-left: auto;
-  left: auto;
-  right: auto;
+    width: 100%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
 }
 
-img.autosize-img,
-video.autosize-video {
-  max-width: 100%;
-  height: auto;
+img.autosize-img, video.autosize-video {
+    max-width: 100%;
+    height: auto;
 }
 
 .messages {
-  list-style: none;
-  text-align: right;
-  padding: 0 5px;
+    list-style: none;
+    text-align: right;
+    padding: 0 5px;
 }
 .messages li {
-  width: 100%;
-  margin: 15px 0;
+    width: 100%;
+    margin: 15px 0;
 }
 .messages li .text-msg  {
-  border: 1px solid black;
-  border-radius: 5px;
-  width: 80%;
-  min-height: 40px;
-  margin: 5px auto;
-  padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 80%;
+    min-height: 40px;
+    margin: 5px auto;
+    padding: 10px;
 }
 .sent_msg {
-  float: right;
-  text-align: right;
-  background: #008080;
+    float: right;
+    text-align: right;
+    background: #008080;
 }
 
 .receive_msg {
-  float: left;
-  text-align: left;
-  background: #191970;
+    float: left;
+    text-align: left;
+    background: #033;
+}
+
+.red{
+    background-color: red;
+}
+
+.green{
+    background-color: green;
+}
+
+.blue{
+    background-color: blue;
 }
