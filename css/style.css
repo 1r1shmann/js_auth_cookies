@@ -3,7 +3,7 @@
     font-family : sans-serif;
     color : #fff;
     background-color : #171717;
-    background-image : url(../img/background.png);
+    background-image : url(background.png);
     background-repeat : repeat;
     background-attachment : fixed;
     margin : 2px auto;
@@ -51,7 +51,7 @@ a:hover {
 
 .authreg a:hover, .aut a:hover {
     background-color : #002200 ;
-    background : #002200 url(../img/background.png);
+    background : #002200 url(background.png);
     color : #fff;
 }
 
@@ -80,14 +80,12 @@ a:hover {
 
 .footmenu a:hover, .aut a:hover {
     background-color : #002200 ;
-    background : #002200 url(../img/background.png);
+    background : #002200 url(background.png);
     color : #fff;
 }
 
 .content {
     color : #fff;
-/* 	background : url(../img/block.png) right no-repeat;*/
-    /* background-color : #fff; */
     display : block;
     padding : 8px;
     min-height: 60px;
@@ -174,7 +172,6 @@ input{
     border-radius : 20px;
     border : #fff solid 2px;
     display : inline-table;
-/*	min-width : 300px;*/
     text-align: center;
 }
 
@@ -186,7 +183,6 @@ select{
     border-radius : 20px;
     border : #fff solid 2px;
     display : inline-table;
-/*	min-width : 315px;*/
     text-align: center;
     text-align-last: center
 }
@@ -198,7 +194,6 @@ textarea{
     margin:2px 0px 2px 0px;
     border-radius : 20px;
     border : #fff solid 2px;
-/*	min-width : 315px;*/
 }
 
 button{
@@ -209,7 +204,6 @@ button{
     border-radius : 4px;
     border : #fff solid 2px;
     display : inline-table;
-    /*min-width : 310px;*/
 }
 
 input:hover, button:hover, textarea:hover{
@@ -437,4 +431,7 @@ img.autosize-img, video.autosize-video {
 
 .blue{
     background-color: blue;
+}
+.circle{
+    border-radius: 50%;
 }

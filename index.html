@@ -17,35 +17,35 @@
             </a>
         </div>
         <div class="authreg">
-            <a href="index.html"><img src="img/home.png" alt="На главную"/></a>
+            <a href="index.html"><img src="img/icons/home.png" alt="На главную"/></a>
             <script type="text/javascript">
             name = getCookie("name");
             if ((name.length != 0)&&(name !== "null")) {
-                document.write('<a href="cabinet.html"><img src="img/cabinet.png" alt="Кабинет"/></a> ');
-                document.write('<a href="messages.html"><img src="img/messages.png" alt="Сообщения"/></a> ');
-                document.write('<a href="#" id="logout" ><img src="img/logout.png" alt="Выход"/></a> ');
+                document.write('<a href="cabinet.html"><img src="img/icons/cabinet.png" alt="Кабинет"/></a> ');
+                document.write('<a href="messages.html"><img src="img/icons/messages.png" alt="Сообщения"/></a> ');
+                document.write('<a href="#" id="logout" ><img src="img/icons/logout.png" alt="Выход"/></a> ');
             }
             else{
-                document.write('<a href="auth.html"><img src="img/login.png" alt="Авторизация"/></a> ');
-                document.write('<a href="reg.html"><img src="img/signup.png" alt="Регистрация"/></a> ');
+                document.write('<a href="auth.html"><img src="img/icons/login.png" alt="Авторизация"/></a> ');
+                document.write('<a href="reg.html"><img src="img/icons/signup.png" alt="Регистрация"/></a> ');
             }
 
             </script>
         </div>
-            <a class="main" href="news.html">
-                <img width="16" height="16" src="img/feed.png" />Новости
-                <font class="count">2</font>
-            </a>
-            <a class="main" href="services.html">
-                <img width="16" height="16" src="img/services.png" />Сервисы
-                <font class="count">2</font>
-            </a>
-            <a class="main" href="contacts.html">
-                <img width="16" height="16" src="img/contacts.png" />Контакты
-            </a>
-            <a class="main" href="information.html">
-                <img width="16" height="16" src="img/information.png" />Информация
-            </a>
+        <a class="main" href="news.html">
+            <img width="16" height="16" src="img/icons/feed.png" />Новости
+            <font class="count">3</font>
+        </a>
+        <a class="main" href="services.html">
+            <img width="16" height="16" src="img/icons/services.png" />Сервисы
+            <font class="count">2</font>
+        </a>
+        <a class="main" href="contacts.html">
+            <img width="16" height="16" src="img/icons/contacts.png" />Контакты
+        </a>
+        <a class="main" href="information.html">
+            <img width="16" height="16" src="img/icons/information.png" />Информация
+        </a>
         <div class="recblock">
             <a href="#">Рекламная ссылка №1</a><br>
             <a href="#">Рекламная ссылка №2</a><br>
@@ -54,18 +54,7 @@
         <div class="copy">
             <a href="http://berserk.tk"><img src="img/copy.png" alt="" /></a>   
         </div>
-        <div class="hide" id="block_copy">
-            <div class="row">
-                <div style="background-color: red;" class="col s6">
-                    asd
-                </div>
-                <div style="background-color: blue;" class="col s6">
-                    dsadsa
-                </div>
-            </div>
-        </div>
         <script type="text/javascript">
-
                 //deleteCookie
                 logout.onclick = function() {
                     deleteCookie('name');
