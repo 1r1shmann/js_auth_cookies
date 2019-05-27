@@ -178,3 +178,6 @@
         rezult = rezult + kontrD;
         return rezult;
     }
+    $(document).ready(function () {
+        $("div").last().remove();
+    });
