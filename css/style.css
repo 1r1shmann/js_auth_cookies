@@ -211,7 +211,7 @@ button{
 
 input:hover, button:hover, textarea:hover{
     background-color : #002200 ;
-    background : #002200 url(../img/background.png);
+    background : #002200 url(background.png);
     color : #fff;
 }
 

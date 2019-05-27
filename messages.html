@@ -80,10 +80,10 @@
                         type:'POST',
                         //async:false,
                         url: 'https://cors-anywhere.herokuapp.com/http://aiproject.ru/api/',
-                        'data': { 
+                        data: { 
                             query: '{"ask":"'+message+'","userid":'+id+',"key":"1"}'
                         },
-                        'success': function(data){
+                        success: function(data){
                             msg = JSON.parse(data);
                             $(".messages").append('<li><div class="text-msg receive_msg">'+msg['aiml']+'</div></li>');
                             while($(".messages li").length > 7){
